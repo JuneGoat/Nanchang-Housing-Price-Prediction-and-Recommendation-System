@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title></title>
+    <!-- simplebar CSS-->
+    <link href="../static/assets/plugins/simplebar/css/simplebar.css" rel="stylesheet"/>
+    <!-- Bootstrap core CSS-->
+    <link href="../static/assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <!--Data Tables -->
+    <link href="../static/assets/plugins/bootstrap-datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet"
+          type="text/css">
+    <link href="../static/assets/plugins/bootstrap-datatable/css/buttons.bootstrap4.min.css" rel="stylesheet"
+          type="text/css">
+    <!-- animate CSS-->
+    <link href="../static/assets/css/animate.css" rel="stylesheet" type="text/css"/>
+    <!-- Icons CSS-->
+    <link href="../static/assets/css/icons.css" rel="stylesheet" type="text/css"/>
+    <!-- Sidebar CSS-->
+    <link href="../static/assets/css/sidebar-menu.css" rel="stylesheet"/>
+    <!-- Custom Style-->
+    <link href="../static/assets/css/app-style.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+
+<!-- Start wrapper-->
+<div id="wrapper">
+
+    <!--Start sidebar-wrapper-->
+    <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
+        <div class="brand-logo">
+            <h5 class="logo-text">南昌房价</h5>
+        </div>
+        <ul class="sidebar-menu do-nicescrol">
+
+            <li class="sidebar-header">数据查看</li>
+            <li>
+                <a href="all_house" class="waves-effect">
+                    <i class="zmdi zmdi-view-dashboard"></i> <span>所有数据</span>
+                </a>
+            </li>
+            <li>
+                <a href="user_house" class="waves-effect">
+                    <i class="zmdi zmdi-view-dashboard"></i> <span>我的收藏</span>
+                </a>
+            </li>
+            <li>
+                <a href="tj_house" class="waves-effect">
+                    <i class="zmdi zmdi-view-dashboard"></i> <span>推荐数据</span>
+                </a>
+            </li>
+            <li class="sidebar-header">数据可视化</li>
+            <li>
+                <a href="lc" class="waves-effect">
+                    <i class="zmdi zmdi-gamepad"></i> <span>楼层分析</span>
+                </a>
+            </li>
+            <li>
+                <a href="qy" class="waves-effect">
+                    <i class="zmdi zmdi-chart"></i> <span>区域分析</span>
+                </a>
+            </li>
+
+
+            <li>
+                <a href="hx" class="waves-effect">
+                    <i class="zmdi zmdi-email"></i>
+                    <span>户型分析</span>
+                </a>
+            </li>
+            <li>
+                <a href="cx" class="waves-effect">
+                    <i class="zmdi zmdi-format-list-bulleted"></i> <span>朝向</span>
+                </a>
+            </li>
+            <li>
+                <a href="tz" class="waves-effect">
+                    <i class="zmdi zmdi-format-list-bulleted"></i> <span>特征分析</span>
+                </a>
+            </li>
+
+            <li class="sidebar-header">算法分析</li>
+            <li>
+                <a href="yc" class="waves-effect">
+                    <i class="zmdi zmdi-grid"></i> <span>算法预测</span>
+                </a>
+            </li>
+            <li>
+                <a href="result" class="waves-effect">
+                    <i class="zmdi zmdi-grid"></i> <span>模型对比</span>
+                </a>
+            </li>
+
+            <li class="sidebar-header">更多</li>
+            <li>
+                <a href="/logout" class="waves-effect">
+                    <i class="fa fa-share"></i> <span>退出登录</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+    <!--End sidebar-wrapper-->
+
+    <!--Start topbar header-->
+    <header class="topbar-nav">
+        <nav class="navbar navbar-expand fixed-top bg-white">
+        </nav>
+    </header>
+    <div class="clearfix"></div>
+
+    <div class="content-wrapper">
+        <div class="container-fluid">
+            {% block pagewra %}
+            {% endblock %}
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!-- Bootstrap core JavaScript-->
+<script src="../static/assets/js/jquery.min.js"></script>
+<script src="../static/assets/js/popper.min.js"></script>
+<script src="../static/assets/js/bootstrap.min.js"></script>
+
+<!-- simplebar js -->
+<script src="../static/assets/plugins/simplebar/js/simplebar.js"></script>
+<!-- waves effect js -->
+<script src="../static/assets/js/waves.js"></script>
+<!-- sidebar-menu js -->
+<script src="../static/assets/js/sidebar-menu.js"></script>
+<!-- Custom scripts -->
+<script src="../static/assets/js/app-script.js"></script>
+
+<!--Data Tables js-->
+<script src="../static/assets/plugins/bootstrap-datatable/js/jquery.dataTables.min.js"></script>
+<script src="../static/assets/plugins/bootstrap-datatable/js/dataTables.bootstrap4.min.js"></script>
+<script src="../static/assets/plugins/bootstrap-datatable/js/dataTables.buttons.min.js"></script>
+<script src="../static/assets/plugins/bootstrap-datatable/js/buttons.bootstrap4.min.js"></script>
+<script src="../static/assets/plugins/bootstrap-datatable/js/jszip.min.js"></script>
+<script src="../static/assets/plugins/bootstrap-datatable/js/pdfmake.min.js"></script>
+<script src="../static/assets/plugins/bootstrap-datatable/js/vfs_fonts.js"></script>
+<script src="../static/assets/plugins/bootstrap-datatable/js/buttons.html5.min.js"></script>
+<script src="../static/assets/plugins/bootstrap-datatable/js/buttons.print.min.js"></script>
+<script src="../static/assets/plugins/bootstrap-datatable/js/buttons.colVis.min.js"></script>
+<script src="../static/echarts/js/echarts.min.js"></script>
+
+
+</body>
+</html>

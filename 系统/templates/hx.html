@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block pagewra %}
+    <script src="../static/echarts/js/echarts.min.js"></script>
+    <!--page-wrapper-->
+    <div class="page-wrapper">
+        <!--page-content-wrapper-->
+        <div class="page-content-wrapper">
+            <div class="page-content">
+                <div class="row">
+                    <div class="col-12 col-lg-12">
+                        <div class="card radius-15">
+                            <div class="card-body">
+                                <div id="chart1" style="height: 700px;width: 100%">
+                                    {{ heatmap_render | safe }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end page-content-wrapper-->
+    </div>
+    <!--end page-wrapper-->
+    <script src="../static/assets/js/jquery.min.js"></script>
+    <script src="../static/assets/plugins/select2/js/select2.min.js"></script>
+    <script src="../static/echarts/js/echarts.min.js"></script>
+{% endblock %}
